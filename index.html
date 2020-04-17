@@ -1,24 +1,36 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="Files/Style.css" media="screen"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="icon" href="Images/tabIcon.png" type="image" sizes="16x16">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		
 		<title>Antoan Vill</title>
 	</head>
 	
 	<body>
-		<div class = "icon-bar">
-			<a href = "index.html" class = "active">Home</a>
+		<div class = "icon-bar" id = "shadow">
+			<a href = "index.html" id = "logo">
+				<Image src = "Images/antoanVillLogo.png">
+			</a>
 			<a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
 			<a href = "#">Production</a>
 			<a href = "#">Products</a>
 			<a href = "otherMenus/News.html">News</a>
 			<a href = "#">Careers</a>
+			
+			<div class = "search-container">
+				<form action = "/action_page.php">
+					<input type = "text" placeholder = "Search.." name = "search">
+					<button type = "submit"><i class = "fa fa-search"></i></button>
+				</form>
+			</div>
 		</div>
 		
 		<div class = "parallax" style = "background-image: url('Images/mainPageBanner.jpg');"></div>
 		
-		<div style = "height: 340px; background-color: white; font-size: 36px; text-align: center;">
+		<div style = "height: 340px; background-color: white; font-size: 36px; text-align: center; ">
 			<hr class="rounded">
 			
 			<h1>
@@ -121,7 +133,7 @@
 		
 		<div class = "parallax" style = "background-image: url('Images/contactUs.jpg');"></div>
 						
-		<div style = "height: 400px; background-color: #ffe8de; font-size: 36px; text-align: center;">
+		<div style = "height: 300px; background-color: #ffe8de; font-size: 36px; text-align: center;">
 			<h3 style = "padding-top: 20px;">
 				Contact us
 			</h3>
@@ -130,13 +142,111 @@
 		</div>
 		
 		<div class = "credits">
-			Production
-
-			<div class = "creditsText">
-				Design and Construction
+			<div class="row">
+				<div class="column">
+					<p>PRODUCTION</p>
+					<p class = "creditsText">
+						Design and Construction
+					</p>
+					<p class = "creditsText">
+						Embroidery and prints
+					</p>
+					<p class = "creditsText">
+						Inspection of materials
+					</p>
+					<p class = "creditsText">
+						Packing and storage
+					</p>
+					<p class = "creditsText">
+						Quality control
+					</p>
+					<p class = "creditsText">
+						Steam Ironing
+					</p>
+					<p class = "creditsText">
+						Sewing
+					</p>
+				</div>
+				<div class="column">
+					<br><br>
+					<p class = "creditsText">
+						Cutting
+					</p>
+					<p class = "creditsText">
+						Gradation
+					</p>
+					<p class = "creditsText">
+						Sampling
+					</p>
+					<p class = "creditsText">
+						Washing and dyeing
+					</p>
+				</div>
+				<div class="column">
+					<p>PRODUCTS</p>
+					<p class = "creditsText">
+						Jumpsuits
+					</p>
+					<p class = "creditsText">
+						Jackets
+					</p>
+					<p class = "creditsText">
+						Dresses
+					</p>
+					<p class = "creditsText">
+						Skirts
+					</p>
+					<p class = "creditsText">
+						Tops
+					</p>
+					<p class = "creditsText">
+						Blouses
+						</p>
+					<p class = "creditsText">
+						Trousers
+					</p>
+				</div>
+				<div class="column">
+					<p>CONTACTS</p>
+					
+					<Image src = "Images/buttonIcons/locationIcon.png" width = "10%" align = "middle" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px;">
+						<a href = "https://www.google.com/maps/place/Antoan+Vill+Ltd/@43.8331562,25.9697317,17z/data=!4m5!3m4!1s0x0:0xf8b63dc580205d77!8m2!3d43.833102!4d25.970826?hl=bg-BG" target="_blank">
+							Antoan Vill,         <br>
+							Bulgaria, 7015 Ruse, <br>
+							1 Hristo Botev Blvd. <br>
+						</a>
+					</p>
+					
+					<Image src = "Images/buttonIcons/phoneIcon.png" width = "10%" align = "middle" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 10px;">
+						<a href = "tel:+359 (0)82 818 525">
+							Tel: +359 (0)82 818 525 <br><br>
+						</a>
+					</p>
+										
+					<Image src = "Images/buttonIcons/emailIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "mailto: office@antoanvill.com">
+							e-mail: office@antoanvill.com <br><br>
+						</a>
+					</p>
+															
+					<Image src = "Images/buttonIcons/facebookIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "https://www.facebook.com/AntoanVill" target="_blank">
+							Antoan Vill
+						</a>
+					</p>
+				</div>
 			</div>
 		</div>
 		
-
+		<div style = "text-align: center; background-color: #222">
+			<Image src = "Images/buttonIcons/fondationIcon.png" style = "padding-top: 75px;"> <br><br>
+			<a href = "https://formadesign.bg/" style = "color: white; font-size: 10px;" target="_blank">
+				© 2015 — 2020 ANTOAN VILL | Design & Development by FORMA Design Bureau
+			</a>
+		</div>
 	</body>
 </html>
