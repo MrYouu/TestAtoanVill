@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../Files/Style.css" media="screen"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		
 		<title>News</title>
@@ -8,12 +9,21 @@
 	
 	<body>
 		<div class = "icon-bar">
-			<a href="../index.html">Home</a> 
+			<a href = "../index.html" id = "logo">
+				<Image src = "../Images/antoanVillLogo.png">
+			</a>
 			<a href = "aboutAntoanVill.html">About Antoan Vill</a>
 			<a href = "#">Production</a>
 			<a href = "#">Products</a>
-			<a href = "News.html" class = "active">News</a>
+			<a href = "News.html" id = "active">News</a>
 			<a href = "#">Careers</a>
+			
+			<div class = "search-container">
+				<form action = "/action_page.php">
+					<input type = "text" placeholder = "Search.." name = "search">
+					<button type = "submit"><i class = "fa fa-search"></i></button>
+				</form>
+			</div>
 		</div>
 		
 		<div class = "parallax" style = "background-image: url('../Images/newsPageBaner.jpg');"></div>
