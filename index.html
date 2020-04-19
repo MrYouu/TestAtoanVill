@@ -1,10 +1,12 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="Files/Style.css" media="screen"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "Files/Style.css" media = "screen">
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "icon" href="Images/tabIcon.png" type = "image" sizes = "16x16">
 		
-		<link rel="icon" href="Images/tabIcon.png" type="image" sizes="16x16">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		
+		<script type = "text/javascript" src = "Files/mobile.js"></script>
 		
 		<title>Antoan Vill</title>
 	</head>
@@ -14,11 +16,16 @@
 			<a href = "index.html" id = "logo">
 				<Image src = "Images/antoanVillLogo.png">
 			</a>
-			<a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
-			<a href = "#">Production</a>
-			<a href = "#">Products</a>
-			<a href = "otherMenus/News.html">News</a>
-			<a href = "#">Careers</a>
+			
+			<p style = "margin-top: 60px;">
+				<a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
+				<a href = "otherMenus/Production.html">Production</a>
+				<a href = "#">Products</a>
+				<a href = "otherMenus/News.html">News</a>
+				<a href = "#">Careers</a>
+			</p>
+			
+			<span class = "cta" onclick = "openNav()">&#9776;</span>
 			
 			<div class = "search-container">
 				<form action = "/action_page.php">
@@ -27,6 +34,17 @@
 				</form>
 			</div>
 		</div>
+		
+		<div class = "overlay" id = "mobile__menu">
+            <a class = "close" onclick = "closeNav()" style = "text-decoration: none;">&times;</a>
+            <div class = "overlay__content">
+                <a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
+				<a href = "otherMenus/Production.html">Production</a>
+				<a href = "#">Products</a>
+				<a href = "otherMenus/News.html">News</a>
+				<a href = "#">Careers</a>
+            </div>
+        </div>
 		
 		<div class = "parallax" style = "background-image: url('Images/mainPageBanner.jpg');"></div>
 		
