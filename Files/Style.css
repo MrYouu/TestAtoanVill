@@ -270,9 +270,6 @@ hr.small
 	padding-left: 70px;
 	padding-right: 70px;
 	background-color: #ffe8de;
-	color: white;
-	text-decoration: underline;
-	text-decoration-color: #c11;
 }
 
 .icon-bar .search-container
@@ -418,7 +415,13 @@ hr.small
 	{
 		display: block;
 		font-size: 30px;
-		margin-top: 60px;
+		margin-top: 50px;
+	}
+	
+	.icon-bar a#logo
+	{
+		padding-left: 20px;
+		padding-right: 40px;
 	}
 	
 	#getInvisible
