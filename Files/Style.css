@@ -1,9 +1,18 @@
 body
 {
 	margin: 0;
-	font-family: "Lato", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	transition: background-color .3s;
 	overflow-x: hidden;
+}
+
+header
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #ffe8de;
 }
 
 ::-webkit-scrollbar
@@ -32,14 +41,14 @@ h1
 {
 	text-align: center;
 	color: #c11;
-	font-family: "Lato", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h3
 {
 	text-align: center;
 	color: #c11;
-	font-family: "Lato", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .textField
@@ -224,7 +233,7 @@ hr.small
 
 .icon-bar
 {
-	font-family: "Lato";
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	width: 100%;
 	background-color: #ffe8de;
@@ -240,20 +249,20 @@ hr.small
 	transition: all 0.3s ease;
 	color: black;
 	font-size: 25px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 }
 
 .icon-bar a#active
 {
 	text-decoration: underline;
-	text-decoration-color: red;
+	text-decoration-color: #c11;
 }
 
 .icon-bar a:hover
 {
 	text-decoration: underline;
-	text-decoration-color: red;
+	text-decoration-color: #c11;
 }
 
 .icon-bar a#logo
@@ -262,8 +271,8 @@ hr.small
 	padding-right: 70px;
 	background-color: #ffe8de;
 	color: white;
-	text-decoration: underline red;
-	text-decoration-color: red;
+	text-decoration: underline;
+	text-decoration-color: #c11;
 }
 
 .icon-bar .search-container
@@ -297,26 +306,91 @@ hr.small
 	background: #ccc;
 }
 
+.cta
+{
+	display: none;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.cta:hover
+{
+	color: #900;
+}
+
+.overlay
+{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: #ffe8de;
+	overflow-x: hidden;
+	transition: all 0.5s ease 0s;
+}
+
+.overlay .close
+{
+	position: absolute;
+	font-size: 60px;
+	color: #c11;
+	cursor: pointer;
+	top: 15px;
+	right: 35px;
+}
+
+.overlay .close:hover
+{
+	color: #900;
+}
+
+.overlay__content
+{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay__content a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.overlay__content a#active
+{
+	text-decoration: underline;
+	text-decoration-color: #c11;
+}
+
+.overlay a 
+{
+	padding: 15px;
+	font-size: 36px;
+	transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover
+{
+	text-decoration: underline;
+	text-decoration-color: #c11;
+}
+
 @media screen and (max-width: 650px)
 {
 	.icon-bar .search-container
 	{
-		float: none;
-		padding-left: 30px;
+		display: none;
 	}
 	
-	.icon-bar a, .icon-bar input[type = text], .icon-bar .search-container button
+	.icon-bar p
 	{
-		float: none;
-		display: block;
-		width: 100%;
-		margin: 0;
-		padding: 14px;
-	}
-	
-	.icon-bar input[type = text]
-	{
-		border: 1px solid #ccc;
+		display: none;
 	}
 	
 	.newsImage
@@ -338,6 +412,13 @@ hr.small
 	.creditsImage
 	{
 		width: 75%;
+	}
+	
+	.cta
+	{
+		display: block;
+		font-size: 30px;
+		margin-top: 60px;
 	}
 	
 	#getInvisible
