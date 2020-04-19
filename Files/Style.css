@@ -6,15 +6,6 @@ body
 	overflow-x: hidden;
 }
 
-header
-{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 30px 10%;
-	background-color: #ffe8de;
-}
-
 ::-webkit-scrollbar
 {
 	width: 5px;
