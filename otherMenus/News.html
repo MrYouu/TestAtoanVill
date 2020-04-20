@@ -2,6 +2,7 @@
 	<head>
 		<link rel = "stylesheet" type = "text/css" href = "../Files/Style.css" media = "screen"/>
 		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "icon" href="../Images/tabIcon.png" type = "image" sizes = "16x16">
 		
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		
@@ -11,6 +12,35 @@
 	</head>
 	
 	<body id = "main">
+		<button onclick = "topFunction()" id = "toTop" title = "Go to top">TO TOP</button>
+		
+		<script>
+			var mybutton = document.getElementById("toTop");
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+				if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750)
+				{
+					mybutton.style.display = "block";
+				}
+				else
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			
+			function topFunction()
+			{
+				window.scroll(
+				{
+					top: 0,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+		</script>
+		
 		<div class = "icon-bar" id = "shadow">
 			<a href = "../index.html" id = "logo">
 				<Image src = "../Images/antoanVillLogo.png">
@@ -19,7 +49,7 @@
 			<p style = "margin-top: 60px;">
 				<a href = "aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "Production.html">Production</a>
-				<a href = "#">Products</a>
+				<a href = "Products.html">Products</a>
 				<a href = "News.html" id = "active">News</a>
 				<a href = "#">Careers</a>
 			</p>
@@ -39,7 +69,7 @@
             <div class = "overlay__content">
                 <a href = "aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "Production.html">Production</a>
-				<a href = "#">Products</a>
+				<a href = "Products.html">Products</a>
 				<a href = "News.html" id = "active">News</a>
 				<a href = "#">Careers</a>
             </div>
@@ -47,10 +77,584 @@
 		
 		<div class = "parallax" style = "background-image: url('../Images/newsPageBaner.jpg');"></div>
 		
-		<div style = "height: 1000px; background-color: white; font-size: 36px">
-			Text
+		<div style = "background-color: white; font-size: 36px">
+			<hr class="rounded">
+			
+			<h3>
+				News
+			</h3>
+			
+			<div class="gridLineRow">
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/38.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							How did the sewing companies in Ruse reorient their production?
+						</p>
+						<p class = "data">
+							10.04.2020
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/37.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							A Bulgarian company started to produce waterproof face masks
+						</p>
+						<p class = "data">
+							01.04.2020
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/36.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							How the coronavirus affected the apparel industry in the country?
+						</p>
+						<p class = "data">
+							26.03.2020
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/35.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill begins to produce face masks
+						</p>
+						<p class = "data">
+							16.03.2020
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/34.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Human resources development of Antoine Vill through continuous skills development
+						</p>
+						<p class = "data">
+							13.01.2020
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/33.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at TMT Ekspo 2019
+						</p>
+						<p class = "data">
+							25.09.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/32.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill on a regional meeting to report progress on the implementation of the
+							Innovation Strategy for Intelligent Specialization (ISIS) on the top
+						</p>
+						<p class = "data">
+							25.06.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/31.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at business networking event
+						</p>
+						<p class = "data">
+							07.06.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/30.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at business networking event
+						</p>
+						<p class = "data">
+							07.06.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/29.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at texprocess in Frankfurt, Germany
+						</p>
+						<p class = "data">
+							15.05.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/28.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at the National Conference "Yes!" to the textile, clothing and leather sector in Bulgaria
+						</p>
+						<p class = "data">
+							10.05.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/27.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill - judge at National Competitions of fashion, hairdressing and makeup
+						</p>
+						<p class = "data">
+							24.04.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/26.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at business forum discussing the prospects and challenges for the development of the
+							companies in the Ruse region
+						</p>
+						<p class = "data">
+							17.04.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/25.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at a charity fashion show Suportin a Local Charity Foundation
+						</p>
+						<p class = "data">
+							18.03.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/24.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at B2B meeting in Athnes, stage-managed by Human Resources Development agency
+						</p>
+						<p class = "data">
+							01.03.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/23.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at prestigious Premier Vision 12-14.02.2019
+						</p>
+						<p class = "data">
+							12.02.2019
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/22.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Presentation of Regional Innovation Centers concept
+						</p>
+						<p class = "data">
+							14.11.2018
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/21.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at the Clothing Machinery Fair 2018, Istanbul
+						</p>
+						<p class = "data">
+							01.10.2018
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/20.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at Premiere Vision 2018, Istanbul
+						</p>
+						<p class = "data">
+							19.03.2018
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/19.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at the Milano Unica Trade Show in Italy
+						</p>
+						<p class = "data">
+							07.02.2018
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/18.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill wishes you a Merry Christmas and a Happy New Year 2018!
+						</p>
+						<p class = "data">
+							23.12.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/17.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill Ltd successfully closes project № BG05M9OP001-1.003-0125-C01 under Programme
+							Development of the Human Resources 2014 - 2020
+						</p>
+						<p class = "data">
+							01.12.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/16.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill announces a procedure through public invitation for the selection of a supplier
+						</p>
+						<p class = "data">
+							27.11.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/15.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill takes part in TV discussion on the garment manufacturing sector on BNT1
+						</p>
+						<p class = "data">
+							25.08.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/14.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Public message for price proposals for selection of contractor for "Production of Visualization Materials"
+						</p>
+						<p class = "data">
+							05.06.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/13.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill collects price offers from suppliers of visual materials in connection with EU project
+						</p>
+						<p class = "data">
+							05.06.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/12.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at the TEXPROCESS 2017 international trade fair
+						</p>
+						<p class = "data">
+							18.05.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/11.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Development of the management capacity of Antoan Vill EOOD through implementing an
+							ICT-based management system for the company’s business processes
+						</p>
+						<p class = "data">
+							15.03.2017
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/10.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Happy holidays from the Antoan Vill team
+						</p>
+						<p class = "data">
+							23.12.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/09.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at International Apparel and Textile Fair 2016 in Dubai
+						</p>
+						<p class = "data">
+							21.11.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/08.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill on a tеambuilding in the mountain
+						</p>
+						<p class = "data">
+							14.11.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/07.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at the European Job day
+						</p>
+						<p class = "data">
+							13.04.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/06.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill at Fashion Industry Trade Fair 10-13 March, Saint Petersburs, Russia
+						</p>
+						<p class = "data">
+							10.03.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/05.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							The colors of 2016
+						</p>
+						<p class = "data">
+							11.01.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/04.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Trending this season - Jumpsuits
+						</p>
+						<p class = "data">
+							05.01.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/03.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill wishes a Happy New Year to all of our friends and partners!
+						</p>
+						<p class = "data">
+							01.01.2016
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/02.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill makes its first delivery to Japan
+						</p>
+						<p class = "data">
+							20.12.2015
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/News/01.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Antoan Vill donates to the Historical Museum in Ruse
+						</p>
+						<p class = "data">
+							31.07.2014
+						</p>
+					</a>
+				</div>
+			</div>
+			
+			<hr class="rounded">
 		</div>
 		
-		<div class = "parallax"></div>
+		<div class = "credits">
+			<div class="row">
+				<div class="column" id = "getInvisible">
+					<p>PRODUCTION</p>
+					<p class = "creditsText">
+						Design and Construction
+					</p>
+					<p class = "creditsText">
+						Embroidery and prints
+					</p>
+					<p class = "creditsText">
+						Inspection of materials
+					</p>
+					<p class = "creditsText">
+						Packing and storage
+					</p>
+					<p class = "creditsText">
+						Quality control
+					</p>
+					<p class = "creditsText">
+						Steam Ironing
+					</p>
+					<p class = "creditsText">
+						Sewing
+					</p>
+				</div>
+				<div class="column" id = "getInvisible">
+					<br><br>
+					<p class = "creditsText">
+						Cutting
+					</p>
+					<p class = "creditsText">
+						Gradation
+					</p>
+					<p class = "creditsText">
+						Sampling
+					</p>
+					<p class = "creditsText">
+						Washing and dyeing
+					</p>
+				</div>
+				<div class="column" id = "getInvisible">
+					<p>PRODUCTS</p>
+					<p class = "creditsText">
+						Jumpsuits
+					</p>
+					<p class = "creditsText">
+						Jackets
+					</p>
+					<p class = "creditsText">
+						Dresses
+					</p>
+					<p class = "creditsText">
+						Skirts
+					</p>
+					<p class = "creditsText">
+						Tops
+					</p>
+					<p class = "creditsText">
+						Blouses
+						</p>
+					<p class = "creditsText">
+						Trousers
+					</p>
+				</div>
+				<div class="column">
+					<p>CONTACTS</p>
+					
+					<Image src = "../Images/buttonIcons/locationIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px;">
+						<a href = "https://www.google.com/maps/place/Antoan+Vill+Ltd/@43.8331562,25.9697317,17z/data=!4m5!3m4!1s0x0:0xf8b63dc580205d77!8m2!3d43.833102!4d25.970826?hl=bg-BG" target="_blank">
+							Antoan Vill,         <br>
+							Bulgaria, 7015 Ruse, <br>
+							1 Hristo Botev Blvd. <br>
+						</a>
+					</p>
+					
+					<Image src = "../Images/buttonIcons/phoneIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 10px;">
+						<a href = "tel:+359 (0)82 818 525">
+							Tel: +359 (0)82 818 525 <br><br>
+						</a>
+					</p>
+										
+					<Image src = "../Images/buttonIcons/emailIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "mailto: office@antoanvill.com">
+							e-mail: office@antoanvill.com <br><br>
+						</a>
+					</p>
+															
+					<Image src = "../Images/buttonIcons/facebookIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "https://www.facebook.com/AntoanVill" target="_blank">
+							Antoan Vill
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div style = "text-align: center; background-color: #222">
+			<Image src = "../Images/buttonIcons/fondationIcon.png" style = "padding-top: 75px;" class = "creditsImage"> <br><br>
+			<a href = "https://formadesign.bg/" style = "color: white; font-size: 10px;" target="_blank">
+				© 2015 — 2020 ANTOAN VILL | Design & Development by FORMA Design Bureau
+			</a>
+		</div>
 	</body>
 </html>

@@ -2,6 +2,7 @@
 	<head>
 		<link rel = "stylesheet" type = "text/css" href = "../Files/Style.css" media = "screen"/>
 		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "icon" href="../Images/tabIcon.png" type = "image" sizes = "16x16">
 		
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 		
@@ -11,6 +12,35 @@
 	</head>
 	
 	<body id = "main">
+		<button onclick = "topFunction()" id = "toTop" title = "Go to top">TO TOP</button>
+		
+		<script>
+			var mybutton = document.getElementById("toTop");
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+				if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750)
+				{
+					mybutton.style.display = "block";
+				}
+				else
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			
+			function topFunction()
+			{
+				window.scroll(
+				{
+					top: 0,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+		</script>
+		
 		<div class = "icon-bar" id = "shadow">
 			<a href = "../index.html" id = "logo">
 				<Image src = "../Images/antoanVillLogo.png">
@@ -19,7 +49,7 @@
 			<p style = "margin-top: 60px;">
 				<a href = "aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "Production.html" id = "active">Production</a>
-				<a href = "#">Products</a>
+				<a href = "Products.html">Products</a>
 				<a href = "News.html">News</a>
 				<a href = "#">Careers</a>
 			</p>
@@ -39,7 +69,7 @@
             <div class = "overlay__content">
                 <a href = "aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "Production.html" id = "active">Production</a>
-				<a href = "#">Products</a>
+				<a href = "Products.html">Products</a>
 				<a href = "News.html">News</a>
 				<a href = "#">Careers</a>
             </div>
@@ -54,14 +84,141 @@
 				Production
 			</h3>
 			
-			<div>
-				<p class = "normalText">
-					<Image src = "../Images/productionPageBanner.jpg" width = "30%;" style = "padding: 20px; float: left;">
-					
-					<p class = "newsText" style = "line-height: 35px;">
-						
-					</p>
-				</p>
+			<div class="gridLineRow">
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/11.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Design and construction
+						</p>
+						<p class = "data">
+							We use specialized software - Lectra and Grafis CAD/CAM systems for the construction of styles
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/10.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Sampling
+						</p>
+						<p class = "data">
+							Antoan Vill makes preproduction samples, SMS, prototypes etc, according to the requirements
+							of the client. Our designers can develop a model based on a picture, sketch or physical sample
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/09.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Gradation
+						</p>
+						<p class = "data">
+							Size gradation
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/08.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Cutting
+						</p>
+						<p class = "data">
+							The cutting department is equipped with Lectra CAD/CAM system and automatic Lectra cutter,
+							which guarantees maximum precision of the process...
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/07.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Sewing
+						</p>
+						<p class = "data">
+							Sewing and finish. The sewing department’s equipment is provided by leading brands such as Juki,
+							Duerkopp Adler, Pfaff.
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/06.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Steam Ironing
+						</p>
+						<p class = "data">
+							Our ironing equipment - Rotondi and Veit ironing boards and presses. Finishing processing
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/05.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Quality control
+						</p>
+						<p class = "data">
+							Inspection of the ready garments before shipment
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/04.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Packing and storage
+						</p>
+						<p class = "data">
+							Packing and storage of the ready garments in the factory
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/03.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Inspection of materials
+						</p>
+						<p class = "data">
+							Inspection of the received materials - in terms of quality and quantity
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/02.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Embroidery and prints
+						</p>
+						<p class = "data">
+							Embroidery and prints on garments as per client specification
+						</p>
+					</a>
+				</div>
+				
+				<div class="gridLikeColumn">
+					<a href = "#">
+						<Image src = "../Images/Production/01.png" class = "newsPageImage">
+						<p class = "newsPageText">
+							Washing and dyeing
+						</p>
+						<p class = "data">
+							Washing, softening, dyeing, additional processing of clothing items
+						</p>
+					</a>
+				</div>
 			</div>
 			
 			<hr class="rounded">
