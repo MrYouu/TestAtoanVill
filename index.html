@@ -12,6 +12,35 @@
 	</head>
 	
 	<body id = "main">
+		<button onclick = "topFunction()" id = "toTop" title = "Go to top">TO TOP</button>
+		
+		<script>
+			var mybutton = document.getElementById("toTop");
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+				if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450)
+				{
+					mybutton.style.display = "block";
+				}
+				else
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			
+			function topFunction()
+			{
+				window.scroll(
+				{
+					top: 0,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+		</script>
+		
 		<div class = "icon-bar" id = "shadow">
 			<a href = "index.html" id = "logo">
 				<Image src = "Images/antoanVillLogo.png">
@@ -20,7 +49,7 @@
 			<p style = "margin-top: 60px;">
 				<a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "otherMenus/Production.html">Production</a>
-				<a href = "#">Products</a>
+				<a href = "otherMenus/Products.html">Products</a>
 				<a href = "otherMenus/News.html">News</a>
 				<a href = "#">Careers</a>
 			</p>
@@ -40,7 +69,7 @@
             <div class = "overlay__content">
                 <a href = "otherMenus/aboutAntoanVill.html">About Antoan Vill</a>
 				<a href = "otherMenus/Production.html">Production</a>
-				<a href = "#">Products</a>
+				<a href = "otherMenus/Products.html">Products</a>
 				<a href = "otherMenus/News.html">News</a>
 				<a href = "#">Careers</a>
             </div>
@@ -80,10 +109,10 @@
 			<hr class="small">
 			
 			<div class = "normalTextButton">
-				<Image src = "Images/News/01.jpg" class = "newsImage">
+				<Image src = "Images/News/38.png" class = "newsImage">
 				
 				<p class = "newsText">
-					Как шивашките фирми в Русенско преориентираха производството си?<br>
+					How did the sewing companies in Ruse reorient their production?<br>
 					<p class = "data">10.04.2020</p> <br><br><br>
 				</p>
 			</div>
@@ -91,7 +120,7 @@
 			<hr class="small">
 			
 			<div class = "normalTextButton">
-				<Image src = "Images/News/02.jpg" class = "newsImage">
+				<Image src = "Images/News/37.png" class = "newsImage">
 				
 				<p class = "newsText">
 					A Bulgarian company started to produce waterproof face masks<br>
@@ -102,7 +131,7 @@
 			<hr class="small">
 			
 			<div class = "normalTextButton">
-				<Image src = "Images/News/03.jpg" class = "newsImage">
+				<Image src = "Images/News/36.png" class = "newsImage">
 				
 				<p class = "newsText">
 					How the coronavirus affected the apparel industry in the country?<br>
