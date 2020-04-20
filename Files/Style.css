@@ -21,7 +21,7 @@ body
 {
 	background: #c11; 
 	border-radius: 10px;
-}
+}logo
 
 ::-webkit-scrollbar-thumb:hover
 {
@@ -35,7 +35,21 @@ h1
 	font-family: 'Open Sans', sans-serif;
 }
 
+h2
+{
+	text-align: center;
+	color: #c11;
+	font-family: 'Open Sans', sans-serif;
+}
+
 h3
+{
+	text-align: center;
+	color: #c11;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h4
 {
 	text-align: center;
 	color: #c11;
@@ -115,6 +129,12 @@ h3
 	padding-left: 20px;
 }
 
+.newsPageText
+{
+	color: black;
+	font-size: 20px;
+}
+
 .data
 {
 	color: aaa;
@@ -125,7 +145,7 @@ h3
 {
 	background-color: transparent;
 	border: none;
-	color: $c11;
+	color: #c11;
 	padding: 12px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -156,6 +176,12 @@ h3
 	padding-top: 20px;
 	padding-right: 20px;
 	float: left;
+}
+
+.newsPageImage
+{
+	width: 50%;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .column
@@ -212,6 +238,31 @@ hr.small
 #getInvisible
 {
 	visibility: visible;
+}
+
+#toTop
+{
+	text-align: center;
+	text-decoration: none;
+	transition-duration: .3s;
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 35px;
+	z-index: 99;
+	font-size: 16px;
+	background-color: white;
+	color: #c11;
+	cursor: pointer;
+	padding: 12px 32px;
+	border: 3px solid #c11;
+}
+
+#toTop:hover
+{
+	background-color: #c11;
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .icon-bar
@@ -361,8 +412,49 @@ hr.small
 	text-decoration-color: #c11;
 }
 
+.gridLikeColumn
+{
+	height: 350px;
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding: 10px;
+	transition-duration: 0.4s;
+}
+
+.gridLikeColumn a
+{
+	text-decoration: none;
+}
+
+.gridLineRow:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gridLikeColumn:hover
+{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #eee;
+}
+
+@media screen and (max-width: 900px)
+{
+	.gridLikeColumn 
+	{
+		width: 50%;
+	}
+}
+
 @media screen and (max-width: 650px)
 {
+	.gridLikeColumn 
+	{
+		width: 100%;
+	}
+	
 	.icon-bar .search-container
 	{
 		display: none;
@@ -420,5 +512,10 @@ hr.small
 	#getInvisible
 	{
 		visibility: visible;
+	}
+	
+	#toTop
+	{
+		bottom: 90px;
 	}
 }
