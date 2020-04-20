@@ -12,6 +12,17 @@
 	</head>
 	
 	<body id = "main">
+		<div class = "Loader">
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+		</div>
+		
 		<Image src = "Images/buttonIcons/tuTopIcon.png" onclick = "topFunction()" id = "toTop" title = "Go to top">
 		
 		<script>
@@ -39,6 +50,12 @@
 					behavior: 'smooth'
 				});
 			}
+			
+			window.addEventListener("load", function ()
+			{
+				const Loader = document.querySelector(".Loader")
+				Loader.className += " hidden";
+			});
 		</script>
 		
 		<div class = "icon-bar" id = "shadow">
