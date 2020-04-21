@@ -1,0 +1,303 @@
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "../../Files/Style.css" media = "screen"/>
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel = "icon" href = "../../Images/tabIcon.png" type = "image" sizes = "16x16">
+		
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		
+		<script type = "text/javascript" src = "../../Files/mobile.js"></script>
+		
+		<title>Human resources development of Antoine Vill through continuous skills development</title>
+	</head>
+	
+	<body id = "main">
+		<div class = "Loader">
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+		</div>
+		
+		<Image src = "../../Images/buttonIcons/tuTopIcon.png" onclick = "topFunction()" id = "toTop" title = "Go to top">
+		
+		<script>
+			var mybutton = document.getElementById("toTop");
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction()
+			{
+				if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400)
+				{
+					mybutton.style.display = "block";
+				}
+				else
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			
+			function topFunction()
+			{
+				window.scroll(
+				{
+					top: 0,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+			
+			window.addEventListener("load", function ()
+			{
+				const Loader = document.querySelector(".Loader")
+				Loader.className += " hidden";
+			});
+		</script>
+		
+		<div class = "icon-bar" id = "shadow">
+			<a href = "../../index.html" id = "logo">
+				<Image src = "../../Images/antoanVillLogo.png">
+			</a>
+			
+			<p style = "margin-top: 60px;">
+				<a href = "../aboutAntoanVill.html">About Us</a>
+				<a href = "../Production.html">Production</a>
+				<a href = "../Products.html">Products</a>
+				<a href = "../News.html" id = "active">News</a>
+				<a href = "#">Careers</a>
+			</p>
+			
+			<span class = "cta" onclick = "openNav()">&#9776;</span>
+			
+			<div class = "search-container">
+				<form action = "/action_page.php">
+					<input type = "text" placeholder = "Search.." name = "search">
+					<button type = "submit"><i class = "fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+		
+		<div class = "overlay" id = "mobile__menu">
+            <a class = "close" onclick = "closeNav()" style = "text-decoration: none;">&times;</a>
+            <div class = "overlay__content">
+                <a href = "../aboutAntoanVill.html">About Us</a>
+				<a href = "../Production.html">Production</a>
+				<a href = "../Products.html">Products</a>
+				<a href = "../News.html" id = "active">News</a>
+				<a href = "#">Careers</a>
+            </div>
+        </div>
+		
+		<div class = "parallax" style = "background-image: url('../../Images/newsPageBaner.jpg');"></div>
+		
+		<div class = "textField">
+			<hr class = "rounded">
+			
+			<h3>
+				Human resources development of Antoine Vill through continuous skills development
+			</h3>
+			
+			<div>
+				<p class = "normalText">
+					<Image src = "../../Images/News/33.png" width = "30%;" style = "padding: 20px; float: left;">
+					
+					<p class = "data">
+						13.01.2020
+					</p>
+					
+					<p class = "newsText" style = "line-height: 35px;">
+						On 10/01/2020 between Antoine Vill EOOD and the Ministry of Labor and Social Policy
+						a grant contract № BG05M9OP001-1.057-0009-C01 under Operational Program "Innovation
+						and Competitiveness" 2014-2020, procedure BG16RFOP002-2.002 "Management Capacity Development"
+						was signed SME growth ", project title:" Development of the management capacity of Antoine Will
+						Ltd. through the introduction of an ICT based business process management system in the company".
+						The overall and specific objectives of the project are related to the purpose of the procedure:
+						
+						<li class = "newsText">
+							Improving the skills of the workforce, promoting their professional and career
+							development through participation in various forms of employment and lifelong learning;
+						</li>
+						<li class = "newsText">
+							Enhancing economic activity and improving access to employment for unemployed and
+							inactive people by providing training opportunities.
+						</li>
+						
+						<p class = "newsText">
+							The project objectives transpose the main objective of the procedure on the territory
+							of Rousse. They will contribute to solving labor problems, except in the particular
+							applicant company, in the region, and in particular in one of the sectors defining
+							the regional economy - the clothing industry. The specific objectives of the project are:
+						</p>
+						
+						<li class = "newsText">
+							Enhancing the qualification of 42 employees of Antoine Vill EOOD and stimulating
+							their participation in flexible forms of employment;
+						</li>
+						<li class = "newsText">
+							Increasing economic activity and providing access to employment for 20 unemployed persons.
+						</li>
+						
+						<p class = "newsText">
+							Achieving the general and specific goals of the project will contribute to the
+							implementation of the company's strategy for human resources development and will
+							respond to the specific needs and shortages of skilled labor of the clothing manufacturers
+							in the region of Ruse. The total value of the project is 205666,65 BGN, of which 147386, 65
+							BGN grant, representing 71.66% of the total eligible costs of the project and 58280.00 BGN
+							own financing, representing 28.34% of the total eligible project costs. Activity duration: 16 months
+						</p>
+					</p>
+				</p>
+			</div>
+			
+			<hr class = "rounded">
+		</div>
+		
+		<div class = "credits">
+			<div class = "row">
+				<div class = "column" id = "getInvisible">
+					<p>PRODUCTION</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/designAndConstruction.html">
+							Design and Construction
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../otherMenus/productionMenus/embroideryAndPrints.html">
+							Embroidery and prints
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/inspectionOfMaterials.html">
+							Inspection of materials
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/packingAndStorage.html">
+							Packing and storage
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/qualityControl.html">
+							Quality control
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/steamIroning.html">
+							Steam Ironing
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/Sewing.html">
+							Sewing
+						</a>
+					</p>
+				</div>
+				<div class = "column" id = "getInvisible">
+					<br><br>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/Cutting.html">
+							Cutting
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/Gradation.html">
+							Gradation
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/Sampling.html">
+							Sampling
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productionMenus/washingAndDyeing.html">
+							Washing and dyeing
+						</a>
+					</p>
+				</div>
+				<div class = "column" id = "getInvisible">
+					<p>PRODUCTS</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Jumpsuits.html">
+							Jumpsuits
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Jackets.html">
+							Jackets
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Dresses.html">
+							Dresses
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../..otherMenus/productsMenus/Skirts.html">
+							Skirts
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Tops.html">
+							Tops
+						</a>
+					</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Blouses.html">
+							Blouses
+						</a>
+						</p>
+					<p class = "creditsText">
+						<a href = "../../otherMenus/productsMenus/Trousers.html">
+							Trousers
+						</a>
+					</p>
+				</div>
+				<div class = "column">
+					<p>CONTACTS</p>
+					
+					<Image src = "../../Images/buttonIcons/locationIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px;">
+						<a href = "https://www.google.com/maps/place/Antoan+Vill+Ltd/@43.8331562,25.9697317,17z/data=!4m5!3m4!1s0x0:0xf8b63dc580205d77!8m2!3d43.833102!4d25.970826?hl=bg-BG" target="_blank">
+							Antoan Vill,         <br>
+							Bulgaria, 7015 Ruse, <br>
+							1 Hristo Botev Blvd. <br>
+						</a>
+					</p>
+					
+					<Image src = "../../Images/buttonIcons/phoneIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 10px;">
+						<a href = "tel:+359 (0)82 818 525">
+							Tel: +359 (0)82 818 525 <br><br>
+						</a>
+					</p>
+										
+					<Image src = "../../Images/buttonIcons/emailIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "mailto: office@antoanvill.com">
+							e-mail: office@antoanvill.com <br><br>
+						</a>
+					</p>
+															
+					<Image src = "../../Images/buttonIcons/facebookIcon.png" width = "10%" align = "top" style = "float: left;">
+					<p class = "creditsText" style = "padding-left: 50px; padding-top: 8px;">
+						<a href = "https://www.facebook.com/AntoanVill" target="_blank">
+							Antoan Vill
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div style = "text-align: center; background-color: #222">
+			<Image src = "../../Images/buttonIcons/fondationIcon.png" style = "padding-top: 75px;" class = "creditsImage"> <br><br>
+			<a href = "https://formadesign.bg/" style = "color: white; font-size: 10px;" target="_blank">
+				© 2015 — 2020 ANTOAN VILL | Design & Development by FORMA Design Bureau
+			</a>
+		</div>
+	</body>
+</html>
